@@ -18,7 +18,7 @@ pipeline {
             }
         }
 
-        stage('Lint') {
+        stage('Run file') {
             steps {
                 sh 'docker run -p 5000:5000 -t latest rakeshravi796/jenkin-python-dock'
             }
